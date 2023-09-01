@@ -22,8 +22,9 @@ nav {
   position: fixed;
   padding: 25px 60px;
   z-index: 1;
+  
 }
-nav a img {
+nav a svg {
   width: 167px;
 }
 .form-wrapper {
@@ -125,4 +126,24 @@ form .form-help :where(label, a) {
 }
 .form-wrapper small a {
   color: #0071eb;
+}
+@media( max-width:740px){
+    body::before{
+        display: none;
+    }
+
+    nav, .form-wrapper{
+        padding: 20px;
+    }
+    nav a svg{
+        width: 140px;
+    }
+    .form-wrapper{
+        width: 100%;
+        top: 43%;
+    }
+    .form-wrapper form{
+      margin: 25px 0 40px;
+    }
+
 }
